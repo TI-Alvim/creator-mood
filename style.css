@@ -1,0 +1,100 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #6b11c7;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.15) 15%, transparent 16%), radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 16%);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    overflow-x: hidden;
+    color: #ffffff;
+}
+
+/* 3D Shadows aggressive pop-art style */
+.text-3d { 
+    text-shadow: 4px 4px 0px #3b0575, 8px 8px 0px rgba(0, 0, 0, 1); 
+}
+.text-3d-pink { 
+    text-shadow: 4px 4px 0px #800040, 6px 6px 0px rgba(0,0,0,1); 
+}
+
+/* Background com padrão de pontos (Halftone) */
+.halftone-bg {
+    background-color: #561099;
+    background-image: radial-gradient(#b8ff00 2px, transparent 2.5px);
+    background-size: 20px 20px;
+}
+
+/* Fita adesiva (Tape) */
+.tape {
+    position: absolute;
+    width: 120px;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(2px);
+    border: 3px solid #000;
+    z-index: 30;
+    box-shadow: 2px 2px 0px rgba(0,0,0,0.5);
+}
+
+/* Balão de fala estilo BD */
+.speech-bubble {
+    position: relative;
+}
+.speech-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 40px;
+    border-width: 30px 30px 0 0;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    z-index: 10;
+}
+.speech-bubble::before {
+    content: '';
+    position: absolute;
+    bottom: -36px;
+    left: 38px;
+    border-width: 34px 34px 0 0;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+    z-index: 5;
+}
+
+/* Animações base */
+.pop-button { transition: all 0.15s ease; }
+.pop-button:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0px #b8ff00; }
+.pop-button:active { transform: translate(2px, 2px); box-shadow: 2px 2px 0px #b8ff00; }
+
+@keyframes stampPulse { 
+    0% { transform: scale(1) rotate(-3deg); } 
+    50% { transform: scale(1.05) rotate(2deg); } 
+    100% { transform: scale(1) rotate(-3deg); } 
+}
+.stamp-animate { animation: stampPulse 3s infinite ease-in-out; }
+
+@keyframes floatAnim { 
+    0%, 100% { transform: translateY(0px) rotate(0deg); } 
+    50% { transform: translateY(-10px) rotate(5deg); } 
+}
+.float-element { animation: floatAnim 4s ease-in-out infinite; }
+
+/* Linhas Verticais para o Portfólio */
+.lines-bg {
+    background-color: #6b11c7; /* Cor base brandBg */
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.15) 2px, transparent 2px);
+    background-size: 40px 100%;
+}
+
+/* Formato de Estrela/Explosão (Burst) para Promoção */
+.promo-star {
+    clip-path: polygon(50% 0%, 61% 15%, 85% 15%, 85% 35%, 100% 50%, 85% 65%, 85% 85%, 61% 85%, 50% 100%, 39% 85%, 15% 85%, 15% 65%, 0% 50%, 15% 35%, 15% 15%, 39% 15%);
+}
+/* Efeito de Papel Rasgado */
+.torn-paper {
+    position: relative;
+    background-color: #ffffff;
+    /* Usa polygon para simular as bordas irregulares do papel */
+    clip-path: polygon(1% 2%, 98% 0%, 100% 98%, 0% 100%);
+    padding: 1.5rem 2.5rem;
+    display: inline-block;
+}

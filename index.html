@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creator Mood - Agência Criativa</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        /* SUA TABELA DE CORES ORIGINAL */
+                        brandPurple: '#7c1fd4',
+                        brandDarkPurple: '#561099',
+                        brandLightPurple: '#a45ee5',
+                        brandGreen: '#b8ff00',
+                        brandPink: '#ff007f',
+                        brandBlue: '#00d2ff',
+                        brandBg: '#6b11c7'
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts: Poppins -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400;1,900&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-brandBg text-white antialiased selection:bg-brandGreen selection:text-brandPurple">
+
+    <header class="sticky top-0 z-50 bg-brandDarkPurple/95 backdrop-blur-md border-b-4 border-brandGreen shadow-xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+
+            <!-- 1. SEU LOGO AQUI 👇 -->
+            <a href="#inicio" class="flex items-center gap-2 group">
+                <img src="SUA_LOGO.png" alt="Creator Mood Logo"
+                    class="h-12 sm:h-14 w-auto object-contain transform group-hover:scale-105 transition">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center gap-6 font-bold text-base lg:text-lg">
+                <a href="#inicio" class="hover:text-brandGreen transition">Início</a>
+                <a href="#quem-somos" class="hover:text-brandGreen transition">Quem Somos</a>
+                <a href="#o-que-fazemos" class="hover:text-brandGreen transition">Portfólio & Serviços</a>
+                <a href="#promocao" class="hover:text-brandGreen transition flex items-center gap-1 text-brandGreen">
+                    <i class="fa-solid fa-bolt"></i> 50% Off
+                </a>
+                <a href="#contato" class="hover:text-brandGreen transition">Contato</a>
+            </nav>
+
+            <!-- CTA WhatsApp Header -->
+            <a href="https://wa.me/5511971551104?text=Olá!%20Vim%20pelo%20site%20da%20Creator%20Mood%20e%20quero%20fazer%20um%20orçamento."
+                target="_blank"
+                class="pop-button hidden sm:flex font-bold text-white px-5 py-2 rounded-xl items-center gap-2 text-sm sm:text-base">
+                <i class="fa-brands fa-whatsapp text-xl text-brandGreen"></i>
+                <span>(11) 97155-1104</span>
+            </a>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="menu-btn" class="md:hidden text-white text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu Dropdown -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-brandDarkPurple border-b-4 border-brandGreen px-6 py-6 space-y-4">
+            <a href="#inicio" class="block font-bold text-lg hover:text-brandGreen mobile-link">Início</a>
+            <a href="#quem-somos" class="block font-bold text-lg hover:text-brandGreen mobile-link">Quem Somos</a>
+            <a href="#o-que-fazemos" class="block font-bold text-lg hover:text-brandGreen mobile-link">Portfólio &
+                Serviços</a>
+            <a href="#promocao" class="block font-bold text-lg text-brandGreen mobile-link">Promoção 50% Off</a>
+            <a href="#contato" class="block font-bold text-lg hover:text-brandGreen mobile-link">Contato</a>
+        </div>
+    </header>
+
+    <!-- CAPA INICIAL -->
+    <section id="inicio" class="relative pt-12 pb-20 lg:py-24 overflow-hidden">
+        <div class="absolute top-10 left-10 text-brandGreen text-3xl float-element"><i class="fa-solid fa-star"></i>
+        </div>
+        <div class="absolute bottom-10 right-10 text-brandPink text-4xl float-element" style="animation-delay: 1s;"><i
+                class="fa-solid fa-sparkles"></i></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div
+                        class="inline-block bg-brandGreen text-brandDarkPurple border-2 border-brandPink shadow-[3px_3px_0px_#ff007f] px-4 py-1.5 rounded-full font-bold text-sm tracking-wide uppercase transform -rotate-2">
+                        <i class="fa-solid fa-wand-magic-sparkles mr-1"></i> Agência de Design & Criação
+                    </div>
+                    <h1 class="text-4xl sm:text-6xl font-black uppercase leading-none text-3d">
+                        Dê vida ao seu <span class="text-brandGreen">estilo</span> e à sua <span
+                            class="text-brandPink text-3d-pink">marca!</span>
+                    </h1>
+                    <p
+                        class="text-lg sm:text-xl text-purple-100 max-w-2xl font-normal bg-brandDarkPurple/40 p-4 rounded-xl border border-brandPink/30 backdrop-blur-sm">
+                        Criamos identidades visuais marcantes, artes digitais de alto impacto, ilustrações exclusivas e
+                        edições de vídeos profissionais.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <!-- Botão "Ver Serviços" Corrigido e Estilizado -->
+                        <a href="#o-que-fazemos"
+                            class="w-full sm:w-auto text-center bg-brandPink text-white font-black text-lg px-8 py-4 rounded-xl border-3 border-brandGreen shadow-[4px_4px_0px_#b8ff00] hover:translate-y-[-2px] transition flex items-center justify-center gap-3 uppercase">
+                            <span>Ver Serviços</span>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </a>
+                        <a href="https://wa.me/5511971551104?text=Olá!%20Quero%20aproveitar%20a%20promoção%20de%2050%%20de%20desconto%20no%20meu%20primeiro%20projeto!"
+                            target="_blank"
+                            class="w-full sm:w-auto text-center bg-brandGreen text-brandDarkPurple font-extrabold text-lg px-8 py-4 rounded-2xl border-3 border-brandPink shadow-[4px_4px_0px_#ff007f] hover:translate-y-[-2px] transition flex items-center justify-center">
+                            <i class="fa-brands fa-whatsapp text-2xl mr-2"></i> Orçamento
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-lg">
+                        <div
+                            class="bg-brandPink border-4 border-brandGreen shadow-[12px_12px_0px_#b8ff00] p-4 sm:p-8 rounded-[3rem] relative text-center flex flex-col items-center justify-center transform rotate-2 hover:rotate-0 transition-transform duration-300">
+                            <div
+                                class="absolute -top-6 -right-6 bg-brandBlue text-brandDarkPurple font-black text-sm px-5 py-3 rounded-full border-4 border-brandDarkPurple shadow-[4px_4px_0px_#561099] transform rotate-12 stamp-animate">
+                                🎨 100% Criativo
+                            </div>
+
+                            <!-- 2. SUA IMAGEM DO BANNER AQUI 👇 -->
+                            <img src="IMAGEM_DO_BANNER.png" alt="Creator Mood Banner"
+                                class="w-full max-w-md object-contain drop-shadow-[0_10px_10px_rgba(0,0,0,0.3)] transform hover:scale-105 transition duration-300 z-10 rounded-2xl">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUEM SOMOS -->
+    <section id="quem-somos"
+        class="py-20 bg-brandDarkPurple relative border-t-8 border-brandPink halftone-bg overflow-hidden">
+        <div class="tape top-0 rotate-1 bg-brandGreen/80 border-brandPink shadow-sm" style="left: 20%;"></div>
+        <div class="tape top-0 -rotate-3 bg-brandBlue/80 border-brandPink shadow-sm" style="left: 80%;"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-12">
+                    <div
+                        class="inline-block bg-brandGreen text-brandDarkPurple font-black px-8 py-3 border-4 border-brandPink text-4xl uppercase tracking-wider shadow-[8px_8px_0px_#ff007f] transform -rotate-3">
+                        Quem Somos?
+                    </div>
+
+                    <div
+                        class="speech-bubble bg-white text-brandDarkPurple p-6 sm:p-8 rounded-3xl border-4 border-brandPink shadow-[10px_10px_0px_#ff007f] w-fit transform rotate-1 relative z-10">
+                        <p class="font-black text-2xl sm:text-3xl uppercase leading-tight">
+                            Dois talentos,<br>
+                            <span class="text-brandPink">muitas ideias</span><br>
+                            e um só objetivo:<br>
+                            <span
+                                class="text-brandGreen bg-brandDarkPurple px-2 mt-1 inline-block transform -rotate-1">o
+                                seu projeto.</span>
+                        </p>
+                    </div>
+
+                    <div class="bg-brandBg/60 p-6 border-l-8 border-brandGreen rounded-r-2xl backdrop-blur-sm">
+                        <p class="text-xl text-white font-medium leading-relaxed">
+                            Somos a <span class="text-brandGreen font-black text-2xl">Creator Mood</span>, um estúdio de
+                            design digital e gráfico, programação e edição de vídeo.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative mt-8 lg:mt-0">
+                    <div
+                        class="absolute -top-12 -right-4 sm:-right-8 bg-brandGreen text-brandDarkPurple font-black text-sm sm:text-base px-6 py-4 rounded-full border-4 border-brandDarkPurple shadow-[6px_6px_0px_#561099] transform rotate-12 text-center leading-tight z-20 stamp-animate">
+                        Criatividade &<br>Tecnologia que se<br>complementam!
+                    </div>
+
+                    <div
+                        class="bg-brandPink p-8 sm:p-10 rounded-xl relative border-4 border-brandDarkPurple shadow-[12px_12px_0px_#561099] transform -rotate-2 hover:rotate-0 transition-transform duration-300">
+                        <div
+                            class="tape -top-4 left-1/2 transform -translate-x-1/2 rotate-2 bg-white/60 border-brandDarkPurple shadow-none w-32">
+                        </div>
+                        <h3
+                            class="text-5xl font-black text-white uppercase mb-6 text-3d-pink transform -rotate-2 bg-brandDarkPurple inline-block px-4 py-2 border-2 border-brandGreen">
+                            Nossa trajetória</h3>
+
+                        <div
+                            class="bg-white p-6 border-4 border-brandDarkPurple shadow-[6px_6px_0px_rgba(86,16,153,0.3)] rounded-lg transform rotate-1">
+                            <p class="text-brandDarkPurple text-xl font-black mb-4 uppercase">
+                                Unimos design e programação.
+                            </p>
+                            <p class="text-brandBg text-base font-bold leading-relaxed">
+                                Com experiências em agências, projetos para grandes marcas e desenvolvimento de sites
+                                profissionais, combinamos criatividade e conhecimento técnico para criar identidades
+                                visuais, materiais gráficos, ilustrações, conteúdos audiovisuais e sites que unem
+                                estética, funcionalidade e propósito.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O QUE FAZEMOS (AGORA COM LINHAS VERTICAIS) -->
+    <!-- O QUE FAZEMOS (PORTFÓLIO E SERVIÇOS) -->
+    <section id="o-que-fazemos" class="py-24 relative border-t-8 border-brandGreen lines-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-4xl mx-auto mb-20 relative">
+                <div
+                    class="inline-block bg-white text-brandDarkPurple font-black px-8 py-3 border-4 border-brandGreen text-3xl sm:text-5xl uppercase tracking-wider shadow-[10px_10px_0px_#b8ff00] transform rotate-2 mb-6">
+                    Portfólio & Serviços
+                </div>
+                <p
+                    class="text-brandGreen mt-6 text-xl sm:text-2xl font-black bg-brandDarkPurple inline-block px-6 py-2 rounded-xl border-2 border-brandPink transform -rotate-1">
+                    Soluções completas em comunicação visual e digital.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 items-start">
+
+                <!-- 1. Design Gráfico -->
+                <div
+                    class="bg-brandLightPurple border-4 border-brandDarkPurple p-8 sm:p-10 relative flex flex-col justify-between transform hover:-translate-y-4 shadow-[8px_8px_0px_#ff007f] transition-all duration-300 group rounded-xl">
+                    <div class="tape -top-5 rotate-2 bg-brandPink/80 border-brandDarkPurple shadow-none w-40"></div>
+
+                    <div>
+                        <h3
+                            class="text-3xl sm:text-4xl font-black text-white uppercase mb-8 pb-6 border-b-4 border-brandDarkPurple flex items-center justify-between">
+                            <span>Design Gráfico</span>
+                            <i class="fa-solid fa-pen-nib text-brandDarkPurple text-4xl sm:text-5xl flex-shrink-0"></i>
+                        </h3>
+
+                        <ul class="space-y-4 font-black text-brandDarkPurple text-xl sm:text-2xl mb-8">
+                            <li class="flex items-center gap-3"><span class="text-brandPink">★</span> Identidade Visual
+                            </li>
+                            <li class="flex items-center gap-3"><span class="text-brandPink">★</span> Ilustração Digital
+                            </li>
+                            <li class="flex items-center gap-3"><span class="text-brandPink">★</span> Criação de logo
+                            </li>
+                            <li class="flex items-center gap-3"><span class="text-brandPink">★</span> Artes digitais
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button onclick="openWhatsAppBudget('Design Gráfico')"
+                        class="w-full bg-brandPink text-white font-black text-xl py-5 border-4 border-brandDarkPurple shadow-[6px_6px_0px_#561099] hover:translate-y-1 hover:shadow-[2px_2px_0px_#561099] transition-all uppercase rounded-xl">
+                        Pedir Orçamento
+                    </button>
+                </div>
+
+                <!-- 2. Código & Web -->
+                <div
+                    class="bg-brandGreen border-4 border-brandDarkPurple p-8 sm:p-10 relative flex flex-col justify-between transform hover:-translate-y-4 shadow-[8px_8px_0px_#561099] transition-all duration-300 group rounded-xl">
+                    <div class="tape -top-5 -rotate-3 bg-brandDarkPurple/80 border-brandPink shadow-none w-40"></div>
+
+                    <div>
+                        <h3
+                            class="text-3xl sm:text-4xl font-black text-brandDarkPurple uppercase mb-8 pb-6 border-b-4 border-brandDarkPurple flex items-center justify-between">
+                            <span>Código & Web</span>
+                            <i class="fa-solid fa-code text-brandDarkPurple text-4xl sm:text-5xl flex-shrink-0"></i>
+                        </h3>
+
+                        <ul class="space-y-4 font-black text-brandDarkPurple text-xl sm:text-2xl mb-8">
+                            <li class="flex items-center gap-3"><span class="text-white drop-shadow-md">★</span> Sites
+                                institucionais</li>
+                            <li class="flex items-center gap-3"><span class="text-white drop-shadow-md">★</span> Landing
+                                pages</li>
+                            <li class="flex items-center gap-3"><span class="text-white drop-shadow-md">★</span>
+                                Sistemas e integrações</li>
+                            <li class="flex items-center gap-3"><span class="text-white drop-shadow-md">★</span>
+                                Automações e APIs</li>
+                        </ul>
+                    </div>
+
+                    <button onclick="openWhatsAppBudget('Desenvolvimento e Programação')"
+                        class="w-full bg-brandDarkPurple text-brandGreen font-black text-xl py-5 border-4 border-white shadow-[6px_6px_0px_#fff] hover:translate-y-1 hover:shadow-[2px_2px_0px_#fff] transition-all uppercase rounded-xl">
+                        Pedir Orçamento
+                    </button>
+                </div>
+
+                <!-- 3. Vídeo & Motion -->
+                <div
+                    class="bg-brandBlue border-4 border-brandDarkPurple p-8 sm:p-10 relative flex flex-col justify-between transform hover:-translate-y-4 shadow-[8px_8px_0px_#561099] transition-all duration-300 group rounded-xl">
+                    <div class="tape -top-5 rotate-1 bg-white/80 border-brandDarkPurple shadow-none w-40"></div>
+
+                    <div>
+                        <h3
+                            class="text-3xl sm:text-4xl font-black text-brandDarkPurple uppercase mb-8 pb-6 border-b-4 border-brandDarkPurple flex items-center justify-between">
+                            <span>Vídeo & Motion</span>
+                            <i class="fa-solid fa-film text-brandDarkPurple text-4xl sm:text-5xl flex-shrink-0"></i>
+                        </h3>
+
+                        <ul class="space-y-4 font-black text-brandDarkPurple text-xl sm:text-2xl mb-8">
+                            <li class="flex items-center gap-3"><span class="text-white drop-shadow-md">★</span> Vídeos
+                                Institucionais</li>
+                            <li class="flex items-center gap-3"><span class="text-white drop-shadow-md">★</span> Reels e
+                                curtos</li>
+                            <li class="flex items-center gap-3"><span class="text-white drop-shadow-md">★</span> Edições
+                                longas</li>
+                            <li class="flex items-center gap-3"><span class="text-white drop-shadow-md">★</span> Motion
+                                Design</li>
+                        </ul>
+                    </div>
+
+                    <button onclick="openWhatsAppBudget('Edição de Vídeo e Motion')"
+                        class="w-full bg-white text-brandBlue font-black text-xl py-5 border-4 border-brandDarkPurple shadow-[6px_6px_0px_#561099] hover:translate-y-1 hover:shadow-[2px_2px_0px_#561099] transition-all uppercase rounded-xl">
+                        Pedir Orçamento
+                    </button>
+                </div>
+
+                <!-- 4. Sob Medida -->
+                <div
+                    class="bg-brandDarkPurple border-4 border-brandPink p-8 sm:p-10 relative flex flex-col justify-between transform hover:-translate-y-4 shadow-[8px_8px_0px_#b8ff00] transition-all duration-300 group rounded-xl">
+                    <div class="tape -top-5 -rotate-2 bg-brandGreen/80 border-brandPink shadow-none w-40"></div>
+
+                    <div>
+                        <h3
+                            class="text-3xl sm:text-4xl font-black text-brandGreen uppercase mb-8 pb-6 border-b-4 border-brandPink flex items-center justify-between">
+                            <span>Sob Medida</span>
+                            <i
+                                class="fa-solid fa-wand-magic-sparkles text-brandPink text-4xl sm:text-5xl flex-shrink-0"></i>
+                        </h3>
+
+                        <ul class="space-y-4 font-black text-white text-xl sm:text-2xl mb-8">
+                            <li class="flex items-center gap-3"><span class="text-brandPink">★</span> Campanhas digitais
+                            </li>
+                            <li class="flex items-center gap-3"><span class="text-brandPink">★</span> Redes sociais</li>
+                            <li class="flex items-center gap-3"><span class="text-brandPink">★</span> Apresentações</li>
+                            <li class="flex items-center gap-3"><span class="text-brandPink">★</span> Consultoria visual
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button onclick="openWhatsAppBudget('Projeto Sob Medida')"
+                        class="w-full bg-brandPink text-white font-black text-xl py-5 border-4 border-white shadow-[6px_6px_0px_#fff] hover:translate-y-1 hover:shadow-[2px_2px_0px_#fff] transition-all uppercase rounded-xl">
+                        Pedir Orçamento
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PROMOÇÃO 50% (BOLINHAS QUE SOMEM EM DEGRADÊ) -->
+    <section id="promocao"
+        class="py-20 relative overflow-hidden bg-brandPurple border-t-8 border-brandPink halftone-bg">
+        <!-- Overlay Gradiente que faz as bolinhas "derreterem" para o fundo sólido -->
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-brandBg z-0"></div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div
+                class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-brandDarkPurple rounded-3xl border-4 border-brandGreen p-8 sm:p-12 shadow-[12px_12px_0px_#ff007f] relative">
+                <div class="lg:col-span-7 space-y-6">
+                    <div
+                        class="inline-block bg-brandPink text-white px-4 py-1.5 rounded-full font-black text-xs uppercase tracking-wider border-2 border-brandGreen">
+                        🔥 Oferta de Boas-Vindas Exclusiva
+                    </div>
+                    <h2 class="text-3xl sm:text-5xl font-black text-white leading-tight">
+                        No primeiro projeto com a gente você terá <span
+                            class="text-brandGreen underline decoration-brandPink">50% de Desc.</span>
+                    </h2>
+                    <p class="text-purple-200 text-lg">
+                        Quer impulsionar sua marca pagando a metade do preço no seu primeiro serviço? Aproveite agora
+                        mesmo essa oportunidade imperdível por tempo limitado!
+                    </p>
+                    <div class="pt-2">
+                        <a href="https://wa.me/5511971551104?text=Olá!%20Quero%20garantir%20meu%20cupom%20de%2050%%20de%20desconto%20no%20meu%20primeiro%20projeto!"
+                            target="_blank"
+                            class="pop-button inline-flex items-center justify-center w-full sm:w-auto gap-3 bg-brandGreen text-brandDarkPurple font-black text-xl px-8 py-4 rounded-2xl">
+                            <i class="fa-solid fa-gift text-brandPink"></i>
+                            <span>Garantir Meus 50% Off</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ESTRELINHA DA PROMOÇÃO (EFEITO DUPLO) -->
+                <div class="lg:col-span-5 flex justify-center mt-8 lg:mt-0 relative">
+                    <div
+                        class="relative stamp-animate drop-shadow-[8px_8px_0px_#ff007f] w-64 h-64 sm:w-72 sm:h-72 flex items-center justify-center">
+                        <!-- Estrela Verde (Borda do Fundo) -->
+                        <div class="absolute inset-0 bg-brandGreen promo-star transform rotate-3"></div>
+                        <!-- Estrela Rosa (Frente) -->
+                        <div
+                            class="absolute inset-2 sm:inset-3 bg-brandPink promo-star flex flex-col items-center justify-center text-center transform -rotate-3 p-4">
+                            <span class="text-6xl sm:text-7xl font-black text-white drop-shadow-lg -mt-2">50%</span>
+                            <span
+                                class="text-base sm:text-lg font-extrabold text-brandGreen uppercase mt-1 bg-brandDarkPurple px-3 py-1 border-2 border-white">de
+                                Desc.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO (FUNDO LISO MESCLANDO COM A SECÇÃO DE CIMA) -->
+    <!-- Removi a borda superior (border-t) para o degradê da seção de cima cair direto aqui -->
+    <section id="contato" class="py-20 bg-brandBg relative z-10">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
+            <div
+                class="inline-block bg-white text-brandDarkPurple font-black px-8 py-3 border-4 border-brandPink text-2xl uppercase tracking-wider shadow-[6px_6px_0px_#ff007f]">
+                Entre em Contato
+            </div>
+
+            <h2 class="text-3xl sm:text-5xl font-black text-brandGreen text-3d">
+                Pronto para transformar sua presença digital?
+            </h2>
+
+            <p
+                class="text-white text-lg sm:text-xl max-w-2xl mx-auto font-medium bg-brandDarkPurple/50 p-4 rounded-xl border border-brandPink/30">
+                Atendimento rápido e personalizado pelo WhatsApp. Vamos conversar sobre a sua ideia e tirar o seu
+                projeto do papel!
+            </p>
+
+            <div
+                class="bg-brandLightPurple p-6 sm:p-10 rounded-3xl max-w-xl mx-auto space-y-8 border-4 border-brandDarkPurple shadow-[12px_12px_0px_#b8ff00] transform rotate-1">
+                <div
+                    class="flex flex-col sm:flex-row items-center justify-center gap-6 text-brandDarkPurple text-center sm:text-left">
+                    <div
+                        class="w-20 h-20 bg-brandGreen rounded-full border-4 border-brandPink flex items-center justify-center text-4xl shadow-[4px_4px_0px_#561099] flex-shrink-0 transform -rotate-12">
+                        <i class="fa-brands fa-whatsapp text-brandDarkPurple"></i>
+                    </div>
+                    <div>
+                        <span
+                            class="text-sm uppercase font-black tracking-widest text-brandDarkPurple block mb-1">WhatsApp
+                            Oficial</span>
+                        <span class="text-3xl sm:text-4xl font-black text-white"
+                            style="text-shadow: 2px 2px 0px #561099;">11 97155-1104</span>
+                    </div>
+                </div>
+
+                <a href="https://wa.me/5511971551104?text=Olá!%20Encontrei%20o%20site%20da%20Creator%20Mood%20e%20gostaria%20de%20falar%20sobre%20um%20projeto."
+                    target="_blank"
+                    class="w-full bg-brandPink hover:bg-brandPink/90 text-white font-black text-xl sm:text-2xl py-5 px-4 rounded-xl border-4 border-brandDarkPurple shadow-[6px_6px_0px_#561099] hover:translate-y-1 hover:shadow-[2px_2px_0px_#561099] transition flex items-center justify-center gap-3 uppercase">
+                    <i class="fa-brands fa-whatsapp text-3xl text-brandGreen flex-shrink-0"></i>
+                    <span class="text-center leading-tight">Conversar no WhatsApp</span>
+                </a>
+            </div>
+
+            <div class="flex justify-center gap-6 pt-10">
+                <a href="https://instagram.com" target="_blank"
+                    class="w-14 h-14 rounded-full bg-brandDarkPurple border-4 border-brandGreen flex items-center justify-center text-white text-2xl hover:bg-brandPink hover:-translate-y-2 transition-all shadow-[4px_4px_0px_#b8ff00]">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://tiktok.com" target="_blank"
+                    class="w-14 h-14 rounded-full bg-brandDarkPurple border-4 border-brandGreen flex items-center justify-center text-white text-2xl hover:bg-brandPink hover:-translate-y-2 transition-all shadow-[4px_4px_0px_#b8ff00]">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="https://youtube.com" target="_blank"
+                    class="w-14 h-14 rounded-full bg-brandDarkPurple border-4 border-brandGreen flex items-center justify-center text-white text-2xl hover:bg-brandPink hover:-translate-y-2 transition-all shadow-[4px_4px_0px_#b8ff00]">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://behance.net" target="_blank"
+                    class="w-14 h-14 rounded-full bg-brandDarkPurple border-4 border-brandGreen flex items-center justify-center text-white text-2xl hover:bg-brandPink hover:-translate-y-2 transition-all shadow-[4px_4px_0px_#b8ff00]">
+                    <i class="fa-brands fa-behance"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brandDarkPurple py-10 text-center border-t-4 border-brandPink">
+        <div class="max-w-7xl mx-auto px-4 text-white text-sm sm:text-base space-y-4 font-medium">
+            <p class="font-black text-2xl">creator <span class="text-brandPink">&lt;/&gt;</span> mood</p>
+            <p>&copy; 2026 Creator Mood. Todos os direitos reservados. Design criativo e tecnologia.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
